@@ -1,0 +1,75 @@
+.form2 {
+    background-color: $dark_grey;
+}
+
+@media only screen and (max-width: 750px) {
+    .form2, .info {
+        width: 80vw;
+        margin: 0 0 0 20vw;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    .form2, .info {
+        width: 100vw;
+    }
+}
+
+
+input[type=submit].btn2 {
+    background-color: $button_dark;
+    border-radius: 15px;
+    color: $white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px;
+    padding: 12px 18px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 250px;
+}
+
+input[type=submit]:disabled {
+    pointer-events: none;
+}
+
+input[type=submit]:hover {
+    color: $button_dark;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+input[type=submit]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.info {
+    height: 50vh;
+    background-color: $light_blue;
+}
+
+.cont_info {
+    margin: 2vh 2vw;
+    background-color: $white;
+    height: calc(100% - 4vh);
+    width: calc(100% - 4vw - 20px);
+}
+
+.wpis {
+    border-bottom: 1px $light_grey solid;
+    padding: 3vh 0 6vh 0;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    & h2 {
+        font-weight: 100;
+    }
+
+    & p {
+        font-size: large;
+    }
+}
